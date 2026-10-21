@@ -1,0 +1,112 @@
+body{
+	font-family: Arial,sans-serif;
+	margin: 0;
+	padding: 0;
+	min-height: 100vh;
+
+	background-image: linear-gradient(
+		rgba(10, 25, 50, 0.15),
+		rgba(10, 25, 50, 0.25)
+	),url("Campus-building1.png");
+
+	background-size: cover;
+	background-position: center 40%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+.login-container{
+	width: 500px;
+	max-width: calc(100% - 60px);
+	margin: 40px auto;
+	padding: 30px;
+	background-color: rgba(225, 255, 225, 0.22);
+	backdrop-filter: blur(8px);
+	-webkit-backdrop-filter: blur(8px);
+	border: 1px solid rgba(255, 255, 255, 0.55);
+	border-radius: 18px;
+	box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+	box-sizing: border-box;
+}
+
+.university-logo{
+	display: block;
+	width: 100px;
+	height: 100px;
+	object-fit: contain;
+	margin: 0 auto 15px;
+}
+
+h1{
+	text-align: center;
+	color: white;
+	font-size: 27px;
+	line-height: 1.4;
+	margin-bottom: 15px;
+	text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+p{
+	text-align: center;
+	color: white;
+	font-size: 15px;
+	line-height: 1.5;
+}
+label{
+	display: block;
+	margin-top: 18px;
+	margin-bottom: 8px;
+	font-weight: bold;
+	color: White;
+}
+input{
+	width: 100%;
+	padding: 12px;
+	border: 1px solid rgba(225, 225, 225, 0.7);
+	border-radius: 7px;
+	box-sizing: border-box;
+	font-size: 15px;
+	background-color: rgba(225, 255, 225, 0.15);
+	color: white;
+	outline: none;
+}
+
+input::placeholder{
+	color: rgba(225, 225, 225, 0.85)
+}
+
+input:focus{
+	border-color: #D6A84F;
+
+}
+button{
+	width: 100%;
+	padding: 14px;
+	margin-top: 25px;
+
+	background-color: #073B75;
+	color: white;
+
+	border: none;
+	border-radius: 10px;
+	font-size: 16px;
+	font-weight: bold;
+	cursor: pointer;
+
+
+	
+}
+button:hover{
+	background-color: #D6A84F;
+	color: #102a43;
+}
+
+@media (max-width: 500px){
+	.login-container{
+	     margin: 20px auto;
+	     padding: 22px;
+
+	}
+	h1{
+		font-size: 22px;
+	}
+}

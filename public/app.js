@@ -1,31 +1,29 @@
 // Get the forms
-const loginForm = document.getElementById('application-form');
+const applicationForm = document.getElementById('application-form');
 const registerForm = document.getElementById('registration-form');
 
 
-// for Login    
-if (loginForm) {
+// Application Form
+if (applicationForm) {
 
-    loginForm.addEventListener('submit', function(event) {
+    applicationForm.addEventListener('submit', function(event) {
 
-        event.preventDefault();
+        const fullName = document.getElementById("fullName").value;
 
-        const Email = document.getElementById("Email").value;
-        const password = document.getElementById("password").value;
+        const email = document.getElementById("email").value;
 
-        console.log("Email: " + Email);
+        const programme = document.getElementById("programme").value;
 
-        const message = document.getElementById('message');
-
-        message.textContent = 'Login submitted successfully!';
-        message.style.color = 'green';
+        console.log("Full Name: " + fullName);
+        console.log("Email: " + email);
+        console.log("Programme: " + programme);
 
     });
 
 }
 
 
-// for Registration
+// Registration Form
 if (registerForm) {
 
     registerForm.addEventListener('submit', function(event) {
@@ -33,9 +31,13 @@ if (registerForm) {
         event.preventDefault();
 
         const fullname = document.getElementById("fullname").value;
+
         const Email = document.getElementById("email").value;
+
         const studentnumber = document.getElementById("studentnumber").value;
+
         const password = document.getElementById("password").value;
+
         const confirmPassword = document.getElementById("confirm-password").value;
 
         const message = document.getElementById('message');
